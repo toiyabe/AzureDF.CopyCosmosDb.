@@ -1,0 +1,29 @@
+{
+	"name": "SourceIdentity_UserRoles",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosDbNoSql1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"UserId": {
+					"type": "string"
+				},
+				"RoleId": {
+					"type": "string"
+				},
+				"Discriminator": {
+					"type": "string"
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "Identity_UserRoles"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

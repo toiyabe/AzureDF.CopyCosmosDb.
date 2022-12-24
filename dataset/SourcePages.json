@@ -1,0 +1,62 @@
+{
+	"name": "SourcePages",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosDbNoSql1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Id": {
+					"type": "string"
+				},
+				"ArticleNumber": {
+					"type": "integer"
+				},
+				"Content": {
+					"type": "string"
+				},
+				"Discriminator": {
+					"type": "string"
+				},
+				"Expires": {
+					"type": "null"
+				},
+				"FooterJavaScript": {
+					"type": "null"
+				},
+				"HeaderJavaScript": {
+					"type": "null"
+				},
+				"Published": {
+					"type": "string"
+				},
+				"RoleList": {
+					"type": "string"
+				},
+				"StatusCode": {
+					"type": "integer"
+				},
+				"Title": {
+					"type": "string"
+				},
+				"Updated": {
+					"type": "string"
+				},
+				"UrlPath": {
+					"type": "string"
+				},
+				"VersionNumber": {
+					"type": "integer"
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "Pages"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

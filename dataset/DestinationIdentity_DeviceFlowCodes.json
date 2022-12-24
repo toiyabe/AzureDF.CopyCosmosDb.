@@ -1,0 +1,16 @@
+{
+	"name": "DestinationIdentity_DeviceFlowCodes",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosDbNoSql2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {},
+		"typeProperties": {
+			"collectionName": "Identity_DeviceFlowCodes"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

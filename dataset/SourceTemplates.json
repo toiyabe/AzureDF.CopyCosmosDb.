@@ -1,0 +1,41 @@
+{
+	"name": "SourceTemplates",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosDbNoSql1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Id": {
+					"type": "string"
+				},
+				"CommunityLayoutId": {
+					"type": "string"
+				},
+				"Content": {
+					"type": "string"
+				},
+				"Description": {
+					"type": "string"
+				},
+				"Discriminator": {
+					"type": "string"
+				},
+				"LayoutId": {
+					"type": "string"
+				},
+				"Title": {
+					"type": "string"
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "Templates"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

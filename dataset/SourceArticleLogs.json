@@ -1,0 +1,41 @@
+{
+	"name": "SourceArticleLogs",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosDbNoSql1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Id": {
+					"type": "string"
+				},
+				"ActivityNotes": {
+					"type": "string"
+				},
+				"ArticleId": {
+					"type": "string"
+				},
+				"ArticleTitle": {
+					"type": "null"
+				},
+				"DateTimeStamp": {
+					"type": "string"
+				},
+				"Discriminator": {
+					"type": "string"
+				},
+				"IdentityUserId": {
+					"type": "string"
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "ArticleLogs"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

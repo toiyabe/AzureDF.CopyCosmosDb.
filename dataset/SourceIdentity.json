@@ -1,0 +1,65 @@
+{
+	"name": "SourceIdentity",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosDbNoSql1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Id": {
+					"type": "string"
+				},
+				"AccessFailedCount": {
+					"type": "integer"
+				},
+				"Discriminator": {
+					"type": "string"
+				},
+				"Email": {
+					"type": "string"
+				},
+				"EmailConfirmed": {
+					"type": "boolean"
+				},
+				"LockoutEnabled": {
+					"type": "boolean"
+				},
+				"LockoutEnd": {
+					"type": "null"
+				},
+				"NormalizedEmail": {
+					"type": "string"
+				},
+				"NormalizedUserName": {
+					"type": "string"
+				},
+				"PasswordHash": {
+					"type": "string"
+				},
+				"PhoneNumber": {
+					"type": "null"
+				},
+				"PhoneNumberConfirmed": {
+					"type": "boolean"
+				},
+				"SecurityStamp": {
+					"type": "string"
+				},
+				"TwoFactorEnabled": {
+					"type": "boolean"
+				},
+				"UserName": {
+					"type": "string"
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "Identity"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

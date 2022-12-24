@@ -1,0 +1,16 @@
+{
+	"name": "DestinationTemplates",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosDbNoSql2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {},
+		"typeProperties": {
+			"collectionName": "Templates"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

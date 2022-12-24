@@ -1,0 +1,16 @@
+{
+	"name": "SourceIdentity_Logins",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosDbNoSql1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {},
+		"typeProperties": {
+			"collectionName": "Identity_Logins"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

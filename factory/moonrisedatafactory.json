@@ -1,0 +1,9 @@
+{
+	"name": "moonrisedatafactory",
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "aa9a973a-c252-405f-880e-0a7a38751afc",
+		"tenantId": "9c4ac7ae-9ea9-4c69-9a18-c55e62c85ce2"
+	}
+}

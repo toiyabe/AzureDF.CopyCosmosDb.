@@ -1,0 +1,62 @@
+{
+	"name": "SourceArticles",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosDbNoSql1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Id": {
+					"type": "string"
+				},
+				"ArticleNumber": {
+					"type": "string"
+				},
+				"Content": {
+					"type": "string"
+				},
+				"Discriminator": {
+					"type": "string"
+				},
+				"Expires": {
+					"type": "null"
+				},
+				"FooterJavaScript": {
+					"type": "string"
+				},
+				"HeaderJavaScript": {
+					"type": "string"
+				},
+				"Published": {
+					"type": "string"
+				},
+				"RoleList": {
+					"type": "null"
+				},
+				"StatusCode": {
+					"type": "integer"
+				},
+				"Title": {
+					"type": "string"
+				},
+				"Updated": {
+					"type": "string"
+				},
+				"UrlPath": {
+					"type": "string"
+				},
+				"VersionNumber": {
+					"type": "integer"
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "Articles"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

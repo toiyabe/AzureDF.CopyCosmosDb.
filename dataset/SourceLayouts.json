@@ -1,0 +1,50 @@
+{
+	"name": "SourceLayouts",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosDbNoSql1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Id": {
+					"type": "string"
+				},
+				"BodyHtmlAttributes": {
+					"type": "null"
+				},
+				"CommunityLayoutId": {
+					"type": "string"
+				},
+				"Discriminator": {
+					"type": "string"
+				},
+				"FooterHtmlContent": {
+					"type": "string"
+				},
+				"Head": {
+					"type": "string"
+				},
+				"HtmlHeader": {
+					"type": "string"
+				},
+				"IsDefault": {
+					"type": "boolean"
+				},
+				"LayoutName": {
+					"type": "string"
+				},
+				"Notes": {
+					"type": "string"
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "Layouts"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

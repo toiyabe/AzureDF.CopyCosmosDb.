@@ -1,0 +1,32 @@
+{
+	"name": "SourceIdentity_Roles",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosDbNoSql1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Id": {
+					"type": "string"
+				},
+				"Discriminator": {
+					"type": "string"
+				},
+				"Name": {
+					"type": "string"
+				},
+				"NormalizedName": {
+					"type": "string"
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "Identity_Roles"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

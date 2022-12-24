@@ -1,0 +1,62 @@
+{
+	"name": "SourceDefaultContainer",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosDbNoSql1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Id": {
+					"type": "string"
+				},
+				"Code": {
+					"type": "null"
+				},
+				"Config": {
+					"type": "null"
+				},
+				"Description": {
+					"type": "string"
+				},
+				"Discriminator": {
+					"type": "string"
+				},
+				"EndPoint": {
+					"type": "string"
+				},
+				"Expires": {
+					"type": "null"
+				},
+				"InputVars": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"Published": {
+					"type": "null"
+				},
+				"Roles": {
+					"type": "null"
+				},
+				"StatusCode": {
+					"type": "integer"
+				},
+				"Updated": {
+					"type": "string"
+				},
+				"Version": {
+					"type": "integer"
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "CosmosCms"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

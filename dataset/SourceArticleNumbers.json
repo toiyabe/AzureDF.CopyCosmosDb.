@@ -1,0 +1,32 @@
+{
+	"name": "SourceArticleNumbers",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosDbNoSql1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Id": {
+					"type": "string"
+				},
+				"Discriminator": {
+					"type": "string"
+				},
+				"LastNumber": {
+					"type": "integer"
+				},
+				"SetDateTime": {
+					"type": "string"
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "ArticleNumber"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
